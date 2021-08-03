@@ -1,0 +1,17 @@
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\bin\Debug\net5.0-windows\ClockWPF.deps.json
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\bin\Debug\net5.0-windows\ClockWPF.dll
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\bin\Debug\net5.0-windows\ref\ClockWPF.dll
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\bin\Debug\net5.0-windows\ClockWPF.pdb
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF.csprojAssemblyReference.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\UserControl1.g.cs
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF_MarkupCompile.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF_MarkupCompile.lref
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\UserControl1.baml
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF.g.resources
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF.AssemblyInfoInputs.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF.AssemblyInfo.cs
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF.csproj.CoreCompileInputs.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF.dll
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ref\ClockWPF.dll
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\net5.0-windows\ClockWPF.pdb

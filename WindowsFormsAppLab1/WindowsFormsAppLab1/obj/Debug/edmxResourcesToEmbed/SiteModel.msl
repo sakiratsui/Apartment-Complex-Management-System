@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SiteYönetimWPDBModelStoreContainer" CdmEntityContainer="SiteYönetimWPDBEntities">
+    <EntitySetMapping Name="Site_Kullanici">
+      <EntityTypeMapping TypeName="SiteYönetimWPDBModel.Site_Kullanici">
+        <MappingFragment StoreEntitySet="Site_Kullanici">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kullaniciadi" ColumnName="kullaniciadi" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="blok" ColumnName="blok" />
+          <ScalarProperty Name="daire" ColumnName="daire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Site_Aidat">
+      <EntityTypeMapping TypeName="SiteYönetimWPDBModel.Site_Aidat">
+        <MappingFragment StoreEntitySet="Site_Aidat">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="blok" ColumnName="blok" />
+          <ScalarProperty Name="daire" ColumnName="daire" />
+          <ScalarProperty Name="aidat" ColumnName="aidat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

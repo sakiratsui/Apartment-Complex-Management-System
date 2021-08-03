@@ -1,0 +1,10 @@
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\bin\Debug\WindowsFormsAppLab1.exe.config
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\bin\Debug\WindowsFormsAppLab1.exe
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\bin\Debug\WindowsFormsAppLab1.pdb
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\obj\Debug\WindowsFormsAppLab1.csprojAssemblyReference.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\obj\Debug\WindowsFormsAppLab1.Form1.resources
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\obj\Debug\WindowsFormsAppLab1.Properties.Resources.resources
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\obj\Debug\WindowsFormsAppLab1.csproj.GenerateResource.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\obj\Debug\WindowsFormsAppLab1.csproj.CoreCompileInputs.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\obj\Debug\WindowsFormsAppLab1.exe
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\WindowsFormsAppLab1\obj\Debug\WindowsFormsAppLab1.pdb

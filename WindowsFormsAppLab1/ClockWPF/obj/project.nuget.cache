@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "5t4NJ2an/OZDoBoV5BAFvqjvEdFOGGlgQ1Ou8eqPoWp83sh7WU/hiFZXDBwfdioH+dJroevuuqsr8uSQK0OnOg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Muge Selen\\Desktop\\05170000023_ApartmanSite_YönetimSistemi\\WindowsFormsAppLab1\\ClockWPF\\ClockWPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Muge Selen\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Muge Selen\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Muge Selen\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

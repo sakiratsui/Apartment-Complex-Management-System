@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<aidatlar>
+  <aidat>
+    <ay>Ocak</ay>
+    <gun>21</gun>
+    <ucret>240</ucret>
+  </aidat>
+  <aidat>
+    <ay>Şubat</ay>
+    <gun>16</gun>
+    <ucret>240</ucret>
+  </aidat>
+  <aidat>
+    <ay>Mart</ay>
+    <gun>14</gun>
+    <ucret>240</ucret>
+  </aidat>
+  <aidat>
+    <ay>Nisan</ay>
+    <gun></gun>
+    <ucret></ucret>
+  </aidat>
+  <aidat>
+    <ay>Mayıs</ay>
+    <gun>24</gun>
+    <ucret>480</ucret>
+  </aidat>
+
+  
+</aidatlar>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MügeSelenElmas_SiteYönetimi", "WindowsFormsAppLab1\MügeSelenElmas_SiteYönetimi.csproj", "{4EF35085-58DE-4036-BB6D-0DE35F745617}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClockWPF", "ClockWPF\ClockWPF.csproj", "{ECFF82A8-6011-4617-BDA2-50DDF095932C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EF35085-58DE-4036-BB6D-0DE35F745617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF35085-58DE-4036-BB6D-0DE35F745617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF35085-58DE-4036-BB6D-0DE35F745617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF35085-58DE-4036-BB6D-0DE35F745617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFF82A8-6011-4617-BDA2-50DDF095932C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFF82A8-6011-4617-BDA2-50DDF095932C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFF82A8-6011-4617-BDA2-50DDF095932C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFF82A8-6011-4617-BDA2-50DDF095932C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B53B51BA-00EC-4F0B-80B7-395A97AD633A}
+	EndGlobalSection
+EndGlobal

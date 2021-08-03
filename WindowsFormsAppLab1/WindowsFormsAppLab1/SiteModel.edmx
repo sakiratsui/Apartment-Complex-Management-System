@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SiteYönetimWPDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'SiteYönetimWPDB.dbo.Site_Aidat' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Site_Aidat">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="ad" />
+            <PropertyRef Name="soyad" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="ad" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="soyad" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="blok" Type="nchar" MaxLength="20" />
+          <Property Name="daire" Type="int" />
+          <Property Name="aidat" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'SiteYönetimWPDB.dbo.Site_Duyuru' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Site_Duyuru">
+          <Property Name="duyuru" Type="nchar" MaxLength="200" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'SiteYönetimWPDB.dbo.Site_Gider' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Site_Gider">
+          <Property Name="gider" Type="nchar" MaxLength="75" />
+          <Property Name="ücret" Type="int" />
+        </EntityType>-->
+        <EntityType Name="Site_Kullanici">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kullaniciadi" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="sifre" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ad" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="soyad" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="blok" Type="nchar" MaxLength="20" />
+          <Property Name="daire" Type="int" />
+        </EntityType>
+        <Association Name="FK_Site_Aidat_Site_Kullanici">
+          <End Role="Site_Kullanici" Type="Self.Site_Kullanici" Multiplicity="1" />
+          <End Role="Site_Aidat" Type="Self.Site_Aidat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Site_Kullanici">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Site_Aidat">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SiteYönetimWPDBModelStoreContainer">
+          <EntitySet Name="Site_Kullanici" EntityType="Self.Site_Kullanici" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Site_Aidat" EntityType="Self.Site_Aidat" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Site_Aidat].[id] AS [id], 
+    [Site_Aidat].[ad] AS [ad], 
+    [Site_Aidat].[soyad] AS [soyad], 
+    [Site_Aidat].[blok] AS [blok], 
+    [Site_Aidat].[daire] AS [daire], 
+    [Site_Aidat].[aidat] AS [aidat]
+    FROM [dbo].[Site_Aidat] AS [Site_Aidat]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Site_Aidat_Site_Kullanici" Association="Self.FK_Site_Aidat_Site_Kullanici">
+            <End Role="Site_Kullanici" EntitySet="Site_Kullanici" />
+            <End Role="Site_Aidat" EntitySet="Site_Aidat" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SiteYönetimWPDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Site_Kullanici">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kullaniciadi" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="sifre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ad" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="soyad" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="blok" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="daire" Type="Int32" />
+          <NavigationProperty Name="Site_Aidat" Relationship="Self.FK_Site_Aidat_Site_Kullanici" FromRole="Site_Kullanici" ToRole="Site_Aidat" />
+        </EntityType>
+        <EntityType Name="Site_Aidat">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="ad" />
+            <PropertyRef Name="soyad" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="ad" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="soyad" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="blok" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="daire" Type="Int32" />
+          <Property Name="aidat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Site_Kullanici" Relationship="Self.FK_Site_Aidat_Site_Kullanici" FromRole="Site_Aidat" ToRole="Site_Kullanici" />
+        </EntityType>
+        <Association Name="FK_Site_Aidat_Site_Kullanici">
+          <End Role="Site_Kullanici" Type="Self.Site_Kullanici" Multiplicity="1" />
+          <End Role="Site_Aidat" Type="Self.Site_Aidat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Site_Kullanici">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Site_Aidat">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SiteYönetimWPDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Site_Kullanici" EntityType="Self.Site_Kullanici" />
+          <EntitySet Name="Site_Aidat" EntityType="Self.Site_Aidat" />
+          <AssociationSet Name="FK_Site_Aidat_Site_Kullanici" Association="Self.FK_Site_Aidat_Site_Kullanici">
+            <End Role="Site_Kullanici" EntitySet="Site_Kullanici" />
+            <End Role="Site_Aidat" EntitySet="Site_Aidat" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SiteYönetimWPDBModelStoreContainer" CdmEntityContainer="SiteYönetimWPDBEntities">
+          <EntitySetMapping Name="Site_Kullanici">
+            <EntityTypeMapping TypeName="SiteYönetimWPDBModel.Site_Kullanici">
+              <MappingFragment StoreEntitySet="Site_Kullanici">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="kullaniciadi" ColumnName="kullaniciadi" />
+                <ScalarProperty Name="sifre" ColumnName="sifre" />
+                <ScalarProperty Name="ad" ColumnName="ad" />
+                <ScalarProperty Name="soyad" ColumnName="soyad" />
+                <ScalarProperty Name="blok" ColumnName="blok" />
+                <ScalarProperty Name="daire" ColumnName="daire" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Site_Aidat">
+            <EntityTypeMapping TypeName="SiteYönetimWPDBModel.Site_Aidat">
+              <MappingFragment StoreEntitySet="Site_Aidat">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="ad" ColumnName="ad" />
+                <ScalarProperty Name="soyad" ColumnName="soyad" />
+                <ScalarProperty Name="blok" ColumnName="blok" />
+                <ScalarProperty Name="daire" ColumnName="daire" />
+                <ScalarProperty Name="aidat" ColumnName="aidat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

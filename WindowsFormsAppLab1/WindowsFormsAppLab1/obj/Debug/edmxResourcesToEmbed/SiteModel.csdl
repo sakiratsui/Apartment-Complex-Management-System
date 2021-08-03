@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SiteYönetimWPDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Site_Kullanici">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kullaniciadi" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="sifre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ad" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="soyad" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="blok" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="daire" Type="Int32" />
+    <NavigationProperty Name="Site_Aidat" Relationship="Self.FK_Site_Aidat_Site_Kullanici" FromRole="Site_Kullanici" ToRole="Site_Aidat" />
+  </EntityType>
+  <EntityType Name="Site_Aidat">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ad" />
+      <PropertyRef Name="soyad" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ad" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="soyad" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="blok" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="daire" Type="Int32" />
+    <Property Name="aidat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Site_Kullanici" Relationship="Self.FK_Site_Aidat_Site_Kullanici" FromRole="Site_Aidat" ToRole="Site_Kullanici" />
+  </EntityType>
+  <Association Name="FK_Site_Aidat_Site_Kullanici">
+    <End Role="Site_Kullanici" Type="Self.Site_Kullanici" Multiplicity="1" />
+    <End Role="Site_Aidat" Type="Self.Site_Aidat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site_Kullanici">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Site_Aidat">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SiteYönetimWPDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Site_Kullanici" EntityType="Self.Site_Kullanici" />
+    <EntitySet Name="Site_Aidat" EntityType="Self.Site_Aidat" />
+    <AssociationSet Name="FK_Site_Aidat_Site_Kullanici" Association="Self.FK_Site_Aidat_Site_Kullanici">
+      <End Role="Site_Kullanici" EntitySet="Site_Kullanici" />
+      <End Role="Site_Aidat" EntitySet="Site_Aidat" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

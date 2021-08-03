@@ -1,0 +1,14 @@
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\UserControl1.g.cs
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\ClockWPF_MarkupCompile.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\ClockWPF_MarkupCompile.lref
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\bin\Debug\netcoreapp3.1\ClockWPF.deps.json
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\bin\Debug\netcoreapp3.1\ClockWPF.dll
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\bin\Debug\netcoreapp3.1\ClockWPF.pdb
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\UserControl1.baml
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\ClockWPF.g.resources
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\ClockWPF.AssemblyInfoInputs.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\ClockWPF.AssemblyInfo.cs
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\ClockWPF.csproj.CoreCompileInputs.cache
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\ClockWPF.dll
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\ClockWPF.pdb
+C:\Users\Muge Selen\source\repos\WindowsFormsAppLab1\ClockWPF\obj\Debug\netcoreapp3.1\ClockWPF.csprojAssemblyReference.cache

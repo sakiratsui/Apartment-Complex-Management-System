@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4EF35085-58DE-4036-BB6D-0DE35F745617}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsAppLab1</RootNamespace>
+    <AssemblyName>WindowsFormsAppLab1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="NumericTextBox">
+      <HintPath>..\NumericTextBox\bin\Debug\NumericTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AidatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AidatForm.Designer.cs">
+      <DependentUpon>AidatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AidatOdemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AidatOdemeForm.Designer.cs">
+      <DependentUpon>AidatOdemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClockUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClockUserControl.Designer.cs">
+      <DependentUpon>ClockUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuyuruForm.Designer.cs">
+      <DependentUpon>DuyuruForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenelBakisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenelBakisForm.Designer.cs">
+      <DependentUpon>GenelBakisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiderChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderChild.Designer.cs">
+      <DependentUpon>GiderChild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiderChild2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderChild2.Designer.cs">
+      <DependentUpon>GiderChild2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiderlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderlerForm.Designer.cs">
+      <DependentUpon>GiderlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapForm.Designer.cs">
+      <DependentUpon>HesapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SiteModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SiteModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteYönetimWPDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteYönetimWPDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Site_Aidat.cs">
+      <DependentUpon>SiteModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Site_Kullanici.cs">
+      <DependentUpon>SiteModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AidatForm.resx">
+      <DependentUpon>AidatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AidatOdemeForm.resx">
+      <DependentUpon>AidatOdemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClockUserControl.resx">
+      <DependentUpon>ClockUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuyuruForm.resx">
+      <DependentUpon>DuyuruForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenelBakisForm.resx">
+      <DependentUpon>GenelBakisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiderChild.resx">
+      <DependentUpon>GiderChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiderChild2.resx">
+      <DependentUpon>GiderChild2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiderlerForm.resx">
+      <DependentUpon>GiderlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapForm.resx">
+      <DependentUpon>HesapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="SiteModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SiteModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SiteModel.edmx.diagram">
+      <DependentUpon>SiteModel.edmx</DependentUpon>
+    </None>
+    <None Include="SiteYönetimWPDBDataSet.xsc">
+      <DependentUpon>SiteYönetimWPDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SiteYönetimWPDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SiteYönetimWPDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SiteYönetimWPDBDataSet.xss">
+      <DependentUpon>SiteYönetimWPDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-building-cartoon-facade-building-service-condominium-apartment.png" />
+    <None Include="Resources\5398959-cartoon-building-png-office-building-cartoon-transparent-png-office-building-png-820_641_preview.png" />
+    <None Include="Resources\residential-building_890x400.png" />
+    <None Include="Resources\146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" />
+    <None Include="Resources\iconfinder_Accept_132347.png" />
+    <None Include="Resources\506-5061704_cool-profile-avatar-picture-cool-picture-for-profile.png" />
+    <None Include="Resources\194938.png" />
+    <None Include="Resources\hesabim.png" />
+    <None Include="Resources\profile-1-icon.png" />
+    <Content Include="aidatXML.xml" />
+    <None Include="Resources\158-1581729_transparent-gender-png-human-resource-management-png-png.png" />
+    <Content Include="Resources\Clock-icon.png" />
+    <Content Include="SiteModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SiteModel.Context.cs</LastGenOutput>
+      <DependentUpon>SiteModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="SiteModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SiteModel.edmx</DependentUpon>
+      <LastGenOutput>SiteModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
